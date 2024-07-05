@@ -6,11 +6,14 @@ public class Professions {
     }
 
     public void viewProfessions() {
-        Worker profession;
+
         for (int a = 0; a < professions.length; a++) {
-            profession = professions[a];
+            System.out.println("**************");
+            Worker profession = professions[a];
             System.out.println(profession.getName() + profession.getLastName() + profession.getPatronymic() + profession.getProfession());
-            System.out.println(profession.goToWork() + profession.goToVacation());
+            profession.goToWork();
+            profession.goToVacation();
+            System.out.println("**************");
         }
     }
 

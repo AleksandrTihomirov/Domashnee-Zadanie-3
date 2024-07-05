@@ -11,17 +11,14 @@ public class Worker {
         this.profession = profession;
     }
 
-    public int goToWork() {
+    public void goToWork() {
         System.out.println("работает в компании Рога и Копыта на своей должности и выполняет свои профессиональные обязанности");
-        return 0;
     }
 
-    public int goToVacation() {
+    public void goToVacation() {
         int days = 30;
         System.out.println("уходит в отпуск на " + days + " календарных дней");
-        return 0;
     }
-
 
     public String getName() {
         return name;
